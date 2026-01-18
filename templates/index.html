@@ -57,16 +57,15 @@
                     <div class="mb-8">
                         <label class="block text-sm font-medium text-slate-400 mb-2">Single Chapter Control</label>
                         <div class="flex gap-2 mb-2">
-                            <input type="number" id="single-chap-input" value="1" min="1" max="2334" 
-                                class="bg-slate-800 border-slate-700 rounded-lg px-3 py-2 w-full focus:ring-2 focus:ring-sky-500 outline-none">
-                            <button onclick="loadChapter()" class="bg-sky-600 hover:bg-sky-500 transition-colors px-4 py-2 rounded-lg font-medium">Load</button>
+                            <input type="text" id="single-chap-input" value="1" 
+                                class="bg-slate-800 border-slate-700 rounded-lg px-3 py-2 w-full focus:ring-2 focus:ring-sky-500 outline-none text-center font-bold text-lg">
+                            <button onclick="loadChapter()" class="bg-sky-600 hover:bg-sky-500 transition-colors px-6 py-2 rounded-lg font-medium">View</button>
                         </div>
-                        <button onclick="copyAndNext()" class="w-full bg-indigo-600 hover:bg-indigo-500 transition-colors py-3 rounded-lg font-bold flex items-center justify-center gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                <path d="M7 9a2 2 0 012-2h6a2 2 0 012 2v6a2 2 0 01-2 2H9a2 2 0 01-2-2V9z" />
-                                <path d="M5 3a2 2 0 00-2 2v6a2 2 0 002 2V5h8a2 2 0 00-2-2H5z" />
+                        <button onclick="copyAndNext()" class="w-full bg-indigo-600 hover:bg-indigo-500 transition-colors py-4 rounded-xl font-bold flex items-center justify-center gap-3 shadow-lg transform active:scale-95 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
                             </svg>
-                            Copy & Next Chapter
+                            COPY & NEXT CHAPTER
                         </button>
                     </div>
 
