@@ -1,0 +1,11 @@
+gunicorn
+Flask
+tiktoken
+requests
+blinker
+click
+itsdangerous
+jinja2
+markupsafe
+werkzeug
+regex

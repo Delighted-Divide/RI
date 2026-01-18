@@ -10,7 +10,7 @@ def main(page: ft.Page):
 
     # Settings for word/token counting
     # encoding = tiktoken.get_encoding("cl100k_base") # Removed to avoid compilation issues on Android
-    CHAPTER_FOLDER = "chapters"
+    CHAPTER_FOLDER = "assets/chapters"
 
     # UI Elements
     chap_input = ft.TextField(
