@@ -17,19 +17,23 @@ jobs:
 
       - name: Install Flet and Dependencies
         run: |
-          pip install flet tiktoken requests
+          pip install flet
 
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: '17'
+      
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.22.0'
+          channel: 'stable'
 
       - name: Build APK
         run: |
-          # Note: We use flet build apk. 
-          # We need to ensure chapters folder is included as an asset.
-          flet build apk --main main_mobile.py --include-data chapters
+          flet build apk --include-packages flet
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
